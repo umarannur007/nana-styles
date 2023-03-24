@@ -1,0 +1,311 @@
+:root {
+	--color-primary: #e2af50;
+	--color-primary-light: #70768F;
+	--color-blue: #3AC4E5;
+	--color-red: #FF6854;
+	--color-grey-light-1:#f7f7f7;
+	--color-grey-light-2: #aaa;
+	--color-grey-dark-1: #777;
+	--color-grey-dark-2: #999;
+	--color-grey-dark-3: #333;
+	--color-white: #fff;
+	--color-black: #000;
+	--default-font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+	line-height: 1.6;
+	font-weight: 300;
+	font-family: "Poppins", sans-serif;
+	color: #777;
+	min-height: 100vh;
+}
+
+/*========Reuseable=====*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn{
+	padding: 12px 20px;
+	border-radius: 5px;
+	border: none;
+	font-weight: 700;
+	text-decoration: none;
+}
+.btn-black{
+	background-color: #000;
+	color: #fff;
+}
+.btn-orange{
+	background-color: #e2af50;
+	color: #000;
+}
+.page-title h2{
+	text-align: center;
+	color: #e2af50;
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+/*===========Header===========*/
+.header{
+	margin: 20px;
+	padding: 0 40px;
+	background-color: #f7f7f7;
+	height: 100vh;
+	border-top: 1px solid #f7f7f7;
+	/*background-image: url("../img/bg.jpg");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.nav{
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 1px 15px 7px rgba(0, 0, 0, .05);
+	padding: 5px 20px;
+}
+.logo{
+
+}
+.logo img{
+	height: 50px;
+}
+.navigation{
+	display: flex;
+	list-style: none;
+}
+.navigation li{
+	margin: 0 15px;
+}
+.navigation li:hover{
+	border-bottom: 1px solid #e2af50;
+	font-weight: 700;
+}
+.navigation li.active{
+	color: #000;
+	font-weight: 700;
+}
+
+.navigation a{
+	text-decoration: none;
+	color: #333;
+}
+
+
+/*=============Header content==========*/
+.header-content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.header-content h1{
+	font-size: 50px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #000;
+	line-height: 1.2;
+}
+.header-content h1 span{
+	display: block;
+	font-weight: 700;
+	color: #e2af50;
+}
+.header-content p{
+	width: 40%;
+	margin-top: 20px;
+}
+.header-action{
+	margin-top: 20px;
+}
+
+/*===========Categories section=========*/
+.categories-section{
+margin-top: 80px;
+}
+.categories{
+	display: flex;
+}
+.category{
+	flex: 1;
+	background-color: #3AC4E5;
+	margin: 10px;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	text-decoration: none;
+}
+.category-bg{
+	background-color: rgba(0, 0, 0, 0.23);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform: scale(.5);
+	border: 1px solid #fff;
+	border-radius: 5px;
+	transition: all .2s;
+}
+.category:hover .category-bg{
+	transform: scale(1);
+}
+
+/*=====Shop section========*/
+.shop-section{
+	margin-top: 80px;
+}
+.shop-header{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+.shop-header .s-border{
+	border: 1px solid #FF6854;
+	text-align: center;
+	padding: 0 20px;
+}
+.shop-header .s-bg{
+	background-color: #FF6854;
+	padding: 0 20px;
+	color: #fff;
+	font-weight: 700;
+}
+.shop{
+	display: flex;
+	flex-wrap: wrap;
+}
+.shop-card{
+	flex-basis: calc(25% - 50px);
+	margin: 25px;
+}
+.shop-img{
+	/*background-color: #f7f7f7;*/
+	max-height: 250px;
+}
+.shop-img img{
+	width: 100%;
+}
+h4{
+	color: #3e3e3e;
+}
+.shop-footer{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.fabric-price{
+	background-color: #e2af50;
+	color: #000;
+	padding: 0 10px;
+	font-weight: 700;
+}
+.fabric-size{
+	color: #000;
+}
+
+
+
+.how-section{
+	background-image:
+			linear-gradient(45deg, rgba(0, 0, 0, .5),
+			rgba(0, 0, 0, .6)), url(https://static.vecteezy.com/system/resources/thumbnails/008/054/211/small/african-ethnic-traditional-pink-pattern-botanical-seamless-beautiful-kitenge-chitenge-style-fashion-design-in-colorful-geometric-abstract-motif-floral-ankara-prints-african-wax-prints-vector.jpg);
+	margin-top: 80px;
+	padding-bottom: 50px;
+}
+.how-section .shop-header{
+	padding-top: 50px;
+}
+.how{
+	display: flex;
+	justify-content: center;
+}
+.how-card{
+	flex-basis: 33.333%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	padding: 2rem;
+	position: relative;
+	height: 200px;
+}
+.how-card-1{
+	background-color: rgba(35, 164, 208, 0.8);
+	border: 5px solid #23a4d0;
+}
+.how-card-2{
+	background-color: rgba(186, 137, 241, 0.8);
+	border: 5px solid #ba89f1;
+}
+.how-card-3{
+	background-color: rgba(169, 177, 88, 0.8);
+	border: 5px solid #a9b158;
+}
+
+
+.how-card h4{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	width: 200px;
+	border-radius: 5px;
+}
+.how-icon{
+	position: absolute;
+	top: -50px;
+	width: 100px;
+	height: 100px;
+	display: flex;
+}
+.how-icon img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.how-icon ion-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	font-size: 30px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
