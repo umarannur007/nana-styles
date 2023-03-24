@@ -51,7 +51,7 @@ body {
 	background-color: #f7f7f7;
 	height: 100vh;
 	border-top: 1px solid #f7f7f7;
-	/*background-image: url("../img/bg.jpg");*/
+	background-image: url("../img/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -280,7 +280,7 @@ h4{
 	font-size: 30px;
 	color: #fff;
 }
-.about-section .shop-header{
+.about-section .shop-header, .contact-section .shop-header{
 	justify-content: flex-start;
 }
 
@@ -314,9 +314,54 @@ h4{
 }
 
 
-
-
-
-
+.contact-section{
+	background-color: #f7f7f7;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	margin-top: 80px;
+}
+.contact{
+	display: flex;
+}
+.contact-details{
+	flex-basis: 60%;
+	margin-right: 80px;
+}
+.contact-img{
+	flex-basis: 40%;
+}
+.form-group{
+	display: flex;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form-group-full{
+	margin-right: 40px;
+}
+.form-group-full textarea{
+	width: 100%;
+	padding: 10px;
+}
+.form-group div{
+	flex: 1;
+	margin-right: 40px;
+}
+label{
+	display: block;
+}
+input{
+	width: 100%;
+	padding: 10px 10px;
+	outline: none;
+}
+.contact button{
+	margin-top: 20px;
+}
+.footer {
+	background-color: #3e3e3e;
+	color: #f7f7f7;
+	padding: 20px 0;
+	text-align: center;
+}
 
 
